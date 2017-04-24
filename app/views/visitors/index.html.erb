@@ -1,17 +1,18 @@
 
-<h3>Welcome</h3>
+<!DOCTYPE html>
 
-<% if current_user==nil %>
+<html>
 
-<%= link_to "Sign in", new_user_session_path, class: 'right' %>
-<br>
-<%= link_to "Sign up", new_user_registration_path, class: 'right' %>
+	<head>
 
-<% else %>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%= link_to "Send", new_information_path, class: 'right' %>
-<br>
+	</head>
 
-<%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link' %></li>
+	<body>
 
-<% end %>
+		<h3>Welcome</h3>
+		
+	</body>
+
+</html>
