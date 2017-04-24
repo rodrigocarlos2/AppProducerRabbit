@@ -1,48 +1,13 @@
-Appproducer
-================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+# AppProducer
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+System to send messages to receiver server.
 
-Problems? Issues?
------------
+## Modules
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+![Producer App](https://github.com/rodrigocarlos2/AppProducerRabbit)
+![Server Machine](https://github.com/rodrigocarlos2/AppProducerRabbit)
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+## Credits
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.3.3
-- Rails 5.0.2
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+> Rodrigo Carlos C. L. B. Leal
