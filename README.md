@@ -1,13 +1,13 @@
 
 # AppProducer
 
-System to send messages to receiver server.
+It is a application to send messages (producer) to a server (receiver) with Message Broker RabbitMQ.
 
 ## Modules
 
-![Producer App](https://github.com/rodrigocarlos2/AppProducerRabbit)
+![Receiver](https://github.com/rodrigocarlos2/MachineServerRabbit)
 <br>
-![Server Machine](https://github.com/rodrigocarlos2/Ruby_RabbitMQ_Hello_World/blob/master/receive_logs_topic.rb)
+![Producer](https://github.com/rodrigocarlos2/AppProducerRabbit)
 
 ## Credits
 
