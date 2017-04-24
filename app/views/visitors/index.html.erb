@@ -1,2 +1,17 @@
+
 <h3>Welcome</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+
+<% if current_user==nil %>
+
+<%= link_to "Sign in", new_user_session_path, class: 'right' %>
+<br>
+<%= link_to "Sign up", new_user_registration_path, class: 'right' %>
+
+<% else %>
+
+<%= link_to "Send", new_information_path, class: 'right' %>
+<br>
+
+<%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link' %></li>
+
+<% end %>
