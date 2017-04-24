@@ -5,7 +5,9 @@
         <button type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
-       <%= link_to ' Sign Out', destroy_user_session_path, :method=>'delete', class: 'btn btn-default' %>
+       <% if current_user!=nil %>
+        <%= link_to 'Sign Out', destroy_user_session_path, :method=>'delete', :class => "btn btn-default", style: 'color:#FFFFFF' %>
+       <% end %>
       </li>
     <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
       <ul class="nav navbar-nav">
