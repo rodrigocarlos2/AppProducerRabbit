@@ -5,7 +5,7 @@ It is a application to send messages (producer) to a server (receiver) with Mess
 
 ## Modules
 
-![Receiver](https://github.com/rodrigocarlos2/MachineServerRabbit/blob/master/receive_logs_topic.rb)
+![Receiver](https://github.com/rodrigocarlos2/MachineServerRabbit)
 ![Producer](https://github.com/rodrigocarlos2/AppProducerRabbit)
 
 ## Credits
