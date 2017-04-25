@@ -5,6 +5,8 @@ require "bunny"
 
 class InformationController < ApplicationController
 
+  before_action :authenticate_user!
+
   # GET /information
   # GET /information.json
   def index
