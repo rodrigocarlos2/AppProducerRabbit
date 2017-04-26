@@ -9,4 +9,14 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:name])
   end
 
+  def after_sign_in_path_for(resource)
+  	
+  	@city = City.find_by_user_id(current_user.id)
+
+  	if @city==nil
+  		stored_location_for(resource) || cities_path
+  	end
+
+  end
+
 end

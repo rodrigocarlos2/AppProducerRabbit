@@ -4,6 +4,7 @@
 <% if user_signed_in? %>
 
   <li class='nav-item'> <%= link_to "Send Message", new_information_path, class: 'btn btn-default', style: 'color:#FFFFFF' %> </li>
+  <li class='nav-item'><%= link_to 'City', new_city_path, class: 'btn btn-default', style: 'color:#FFFFFF' %></li>
 
 <% else %>
 

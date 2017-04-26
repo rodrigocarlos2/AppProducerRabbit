@@ -11,6 +11,7 @@ class InformationController < ApplicationController
   # GET /information.json
   def index
     @information = Information.all
+    @city = City.find_by_user_id(current_user.id)
   end
 
   # GET /information/new
@@ -22,6 +23,10 @@ class InformationController < ApplicationController
   # POST /information.json
   def create
     @information = Information.new(information_params)
+    @information.producer = current_user.id
+    @city = City.find_by_user_id(current_user.id)
+
+    @info = current_user.email + " says " + @information.content
 
     respond_to do |format|
       if @information.save
@@ -31,10 +36,10 @@ class InformationController < ApplicationController
 
         ch       = conn.create_channel
         x        = ch.topic("topic_logs")
-        severity = ARGV.shift || current_user.email
+        severity = ARGV.shift || @city.name
         msg      = ARGV.empty? ? "Hello World!" : ARGV.join(" ")
 
-        x.publish(@information.content, :routing_key => severity)
+        x.publish(@info, :routing_key => severity)
 
         conn.close
 

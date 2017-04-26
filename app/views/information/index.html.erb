@@ -1,6 +1,12 @@
 
 <h1>Information</h1>
 
+<% if @city!=nil %>
+
+  <p> My City: <%= @city.name %> </p>
+
+<% end %>
+
 <table>
   <thead>
     <tr>
@@ -12,7 +18,9 @@
   <tbody>
     <% @information.each do |information| %>
       <tr>
-        <td><%= information.content %></td>
+        <% if information.producer==current_user.id %>
+          <td><%= information.content %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
